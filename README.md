@@ -37,7 +37,7 @@ Run `test_example.ipynb` to see detected results (see as follows) of pretrained 
 
 ### Complexity Check
 
-Pay attention to the constraints of the complexity for your detectors.
+Pay attention to the constraints of the complexity for your detectors. The following commands are used for official judgements, with 640x400 images for inference.
 ```
 python3 ./tools/get_flops.py local_config/atss_r50_fpn_ms12.py --shape 640 400
 python3 ./tools/benchmark.py local_config/atss_r50_fpn_ms12.py pretrain_model/atss_r50_fpn_ms12.model --fuse-conv-bn
