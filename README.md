@@ -18,22 +18,22 @@ Link the dataset to the folder "./data/" under this repo.
 ln -s path/to/dataset/ ./data/
 ```
 
-### Training
+### Train
 
 ```
 ./tools/dist_train.sh local_config/atss_r50_fpn_ms12.py 8
 ```
 Note that the model of this example is trained under 8-GPU settings. If you donot have enough GPU cards, try to adjust some related settings for efficient training.
 
-### Testing 
-
-```
-./tools/dist_test.sh local_config/atss_r50_fpn_ms12.py pretrain_model/atss_r50_fpn_ms12.model 8 --eval bbox
-```
-
 Run `test_example.ipynb` to see detected results (see as follows) of pretrained baseline model. The baseline model is relatively weak, try your best to improve it~!
 
 ![car_detection](https://github.com/implus/CarDetectionExample/blob/master/car.png)
+
+### Test & Submit Result
+
+```
+./tools/dist_test.sh local_config/atss_r50_fpn_ms12.py pretrain_model/atss_r50_fpn_ms12.model 8 --format-only --options "jsonfile_prefix=./submits/atss_r50_fpn_ms12_results"
+```
 
 ### Complexity Check
 

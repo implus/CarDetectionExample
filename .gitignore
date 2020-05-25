@@ -124,3 +124,6 @@ work_dirs/
 mmdet/models/dense_heads/atssns_head.py
 data/
 data
+submits/*.json
+local_config/cal_ap.py
+tools/cal_ap.py

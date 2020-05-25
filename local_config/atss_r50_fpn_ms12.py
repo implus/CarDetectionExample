@@ -115,7 +115,7 @@ data = dict(
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/testA.json',
+        ann_file=data_root + 'annotations/testA_image_info.json',
         img_prefix=data_root + 'testA/',
         pipeline=test_pipeline))
 # optimizer
