@@ -31,7 +31,9 @@ Note that the model of this example is trained under 8-GPU settings. If you dono
 ./tools/dist_test.sh local_config/atss_r50_fpn_ms12.py pretrain_model/atss_r50_fpn_ms12.model 8 --eval bbox
 ```
 
-Run `test_example.ipynb` to see detected results of pretrained baseline model. The baseline model is relatively weak, try your best to improve it~!
+Run `test_example.ipynb` to see detected results (see as follows) of pretrained baseline model. The baseline model is relatively weak, try your best to improve it~!
+
+![car_detection](https://github.com/implus/CarDetectionExample/blob/master/car.png)
 
 ### Complexity Check
 
