@@ -43,6 +43,10 @@ python3 ./tools/get_flops.py local_config/atss_r50_fpn_ms12.py --shape 640 400
 python3 ./tools/benchmark.py local_config/atss_r50_fpn_ms12.py pretrain_model/atss_r50_fpn_ms12.model --fuse-conv-bn
 ```
 
+### Dataset
+
+The train, valid and testA data can be downloaded in [GoogleDrive](https://drive.google.com/file/d/1UvD0PZKvmO0TfQBN6FApM53l_ThLH40O/view?usp=sharing).
+
 ## About MMDetection Framework
 
 MMDetection is an open source project that is contributed by researchers and engineers from various colleges and companies. The technical report is on [ArXiv](https://arxiv.org/abs/1906.07155).
