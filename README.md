@@ -15,7 +15,7 @@ Please see [getting_started.md](docs/getting_started.md) for the basic usage of 
 
 Link the dataset to the folder "./data/" under this repo.
 ```
-ln -s path/to/dataset/ ./data/
+ln -s path/to/dataset data
 ```
 
 ### Train
@@ -32,7 +32,7 @@ Run `test_example.ipynb` to see detected results (see as follows) of pretrained 
 ### Test & Submit Result
 
 ```
-./tools/dist_test.sh local_config/atss_r50_fpn_ms12.py pretrain_model/atss_r50_fpn_ms12.model 8 --format-only --options "jsonfile_prefix=./submits/atss_r50_fpn_ms12_results"
+./tools/dist_test.sh local_config/atss_r50_fpn_ms12.py pretrain_model/atss_r50_fpn_ms12.model 8 --format-only --options "jsonfile_prefix=./submit_atss_r50_fpn_ms12_results"
 ```
 
 ### Complexity Check

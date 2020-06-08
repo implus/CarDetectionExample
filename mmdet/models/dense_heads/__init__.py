@@ -1,6 +1,6 @@
 from .anchor_head import AnchorHead
 from .atss_head import ATSSHead
-from .atssns_head import ATSSNSHead
+#from .atssns_head import ATSSNSHead
 from .fcos_head import FCOSHead
 from .fovea_head import FoveaHead
 from .free_anchor_retina_head import FreeAnchorRetinaHead
