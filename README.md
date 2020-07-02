@@ -52,3 +52,28 @@ Documentation: https://mmdetection.readthedocs.io/
 The branch works with **PyTorch 1.3 to 1.5**.
 
 This project is released under the [Apache 2.0 license](LICENSE).
+
+## Submit 
+
+每支队伍将如下文件夹用tar打包：
+```
+tar -zcvf team_english_name.tar.gz team_english_name
+```
+并将 team_english_name.tar.gz 于7月8日中午12:00前发送至 xiangli@momenta.ai, 注意team_english_name替换为真实的队伍英文名
+文件命名格式如下(#号后为说明，不包括在名字中)
+
+```
+team_english_name           # 更新为真实的队伍英文名字
+├── CarDetectionExample     # 能够复现本队伍较紧T1条件下模型的代码, 供主办方复现及T1条件核查
+├── submit_T0_results       # T0条件下模型在testA上的预测结果
+├── submit_T1_results       # T1条件下模型在testA上的预测结果
+├── T1.model                # T1条件下的训练好的模型，用于生成submit_T1_results
+├── README.md               # README必须包含如下内容，举例说明如下，具体的超参数配置可以有变化
+│   ├── Training Cmd: 
+│   │   ├── ./tools/dist_train.sh local_config/team_english_name.py 8
+│   ├── Submit Cmd:
+│   │   ├── ./tools/dist_test.sh local_config/team_english_name.py ../T1.model 8 --format-only --options "jsonfile_prefix=./submit_T1_results"
+│   ├── Complexity Check Cmd
+│   │   ├── python3 ./tools/get_flops.py local_config/team_english_name.py --shape 640 400
+│   │   ├── python3 ./tools/benchmark.py local_config/team_english_name.py ../T1.model --fuse-conv-bn
+```
