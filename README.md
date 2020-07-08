@@ -59,7 +59,7 @@ This project is released under the [Apache 2.0 license](LICENSE).
 ```
 tar -zcvf team_english_name.tar.gz team_english_name
 ```
-并将 team_english_name.tar.gz 于7月8日中午12:00前发送至 xiangli@momenta.ai, 注意team_english_name替换为真实的队伍英文名
+并将 team_english_name.tar.gz 于7月8日中午20:00前发送至 xiangli@momenta.ai, 注意team_english_name替换为真实的队伍英文名
 文件命名格式如下(#号后为说明，不包括在名字中)
 
 ```
@@ -78,8 +78,3 @@ team_english_name           # 更新为真实的队伍英文名字
 │   │   ├── python3 ./tools/benchmark.py local_config/team_english_name.py ../T1.model --fuse-conv-bn
 ```
 
-## 0708 Record
-
-| 排名 | 队伍英文名    | T0 性能 | T1 性能 | 测速(fps) |
-| ---: | ----------    | :-----: | :-----: | :-------: |
-| 1    | Faster_Better |  --     | 76.7    | 
