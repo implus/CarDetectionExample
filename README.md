@@ -77,3 +77,9 @@ team_english_name           # 更新为真实的队伍英文名字
 │   │   ├── python3 ./tools/get_flops.py local_config/team_english_name.py --shape 640 400
 │   │   ├── python3 ./tools/benchmark.py local_config/team_english_name.py ../T1.model --fuse-conv-bn
 ```
+
+## 0708 Record
+
+| 排名 | 队伍英文名    | T0 性能 | T1 性能 | 测速(fps) |
+| ---: | ----------    | :-----: | :-----: | :-------: |
+| 1    | Faster_Better |  --     | 76.7    | 
