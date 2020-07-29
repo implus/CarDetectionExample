@@ -78,6 +78,15 @@ team_english_name           # 更新为真实的队伍英文名字
 │   │   ├── python3 ./tools/benchmark.py local_config/team_english_name.py ../T1.model --fuse-conv-bn
 ```
 
+## 0728 Final Record
+
+截止7.28提交队伍的成绩如下，经代码核验成绩均有效。
+
+| 排名 | 队伍英文名    |  T1 性能 | 测速(fps) | Flops(GMac) | Params (M) | T0 性能 |
+| ---: | ----------    |  :-----: | :-------: | :---------: | :--------: | :-----: |
+| 1    | Faster_Better |  80.4    | 99.3      | 19.05       | 10.72      |   80.4  |
+| 2    | xitianqujing  |  80.2    | 51.7      | 33.03       | 26.30      |   83.0  |
+| 3    | flying        |  79.0    | 27.2      | 19.04       | 14.65      |   79.0  |
 
 ## 0708 Record
 
