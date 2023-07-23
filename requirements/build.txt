@@ -1,4 +1,4 @@
 # These must be installed before building mmdetection
 numpy
-torch==1.4.0
+torch==1.13.1
 mmcv==0.6.2
